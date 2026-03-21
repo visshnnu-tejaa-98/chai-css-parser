@@ -20,6 +20,9 @@ function removeClass(element, className) {
 
 function processElements() {
   let elements = scanDOM();
+  elements = [...elements].filter((el) =>
+    [...el.classList].some((cls) => cls.startsWith("chai-")),
+  );
 
   elements.forEach((element) => {
     if (processedElements.has(element)) return;
