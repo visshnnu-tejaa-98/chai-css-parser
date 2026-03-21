@@ -36,7 +36,6 @@ function normalisedValue(value) {
 }
 
 export function parser(cls) {
-  console.log(cls);
   if (classCache.has(cls)) return classCache.get(cls);
 
   let parts = cls.split("-");

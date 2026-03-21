@@ -1,30 +1,51 @@
-export const utilities = {
+const spacing = {
   p: "padding",
   m: "margin",
-  bg: "backgroundColor",
-  text: "color",
-  fs: "fontSize",
-  fw: "fontWeight",
-  mt: "marginTop",
-  mb: "marginBottom",
-  mr: "marginRight",
-  ml: "marginLeft",
   pt: "paddingTop",
   pb: "paddingBottom",
   pl: "paddingLeft",
   pr: "paddingRight",
-  align: "textAlign",
+  mt: "marginTop",
+  mb: "marginBottom",
+  ml: "marginLeft",
+  mr: "marginRight",
+};
+
+const typography = {
+  text: "color",
+  fs: "fontSize",
+  fw: "fontWeight",
+};
+
+const layout = {
   w: "width",
   h: "height",
-  cursor: "cursor",
-  outline: "outline",
+  display: "display",
+};
 
-  // Flex
-  items: "alignItems",
-  justify: "justifyContent",
-
+const borders = {
   rounded: "borderRadius",
   border: "border",
+};
+
+const flex = {
+  items: "alignItems",
+  justify: "justifyContent",
+};
+
+const misc = {
+  outline: "outline",
+  bg: "backgroundColor",
+  cursor: "cursor",
+  align: "textAlign",
+};
+export const utilities = {
+  ...spacing,
+  ...typography,
+  ...layout,
+  ...borders,
+  ...flex,
+  ...misc,
 };
 
 export const flexMap = {
