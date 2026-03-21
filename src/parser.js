@@ -39,9 +39,6 @@ export function parser(cls) {
   if (classCache.has(cls)) return classCache.get(cls);
 
   let parts = cls.split("-");
-
-  if (parts.length < 3 && parts[1] === "flex") return parseFlex();
-
   let [_, utility, ...valueParts] = parts;
 
   if (specialParsers[utility]) return specialParsers[utility](valueParts);

@@ -15,6 +15,8 @@ const typography = {
   text: "color",
   fs: "fontSize",
   fw: "fontWeight",
+  td: "textDecoration",
+  lh: "lineHeight",
 };
 
 const layout = {
