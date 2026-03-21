@@ -38,4 +38,5 @@ function processElements() {
 
 document.addEventListener("DOMContentLoaded", () => {
   processElements();
+  document.body.style.visibility = "visible";
 });
