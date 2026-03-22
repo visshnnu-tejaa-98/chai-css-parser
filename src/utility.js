@@ -61,3 +61,10 @@ export const flexMap = {
 };
 
 export const borderStyles = ["solid", "dashed", "dotted", "double", "none"];
+
+export const textDecorationMap = {
+  underline: "underline",
+  lineThrough: "line-through",
+  none: "none",
+  over: "overline",
+};

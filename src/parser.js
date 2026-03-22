@@ -1,4 +1,9 @@
-import { borderStyles, flexMap, utilities } from "./utility.js";
+import {
+  borderStyles,
+  flexMap,
+  textDecorationMap,
+  utilities,
+} from "./utility.js";
 
 const classCache = new Map();
 
@@ -30,8 +35,15 @@ const specialParsers = {
 
 function normalisedValue(value) {
   if (!value) return null;
-  if (!isNaN(value)) return `${value}px`;
+
+  if (textDecorationMap[value]) return textDecorationMap[value];
+
+  if (!isNaN(value)) {
+    return value.includes(".") ? value : `${value}px`;
+  }
+
   if (flexMap[value]) return flexMap[value];
+
   return value;
 }
 
