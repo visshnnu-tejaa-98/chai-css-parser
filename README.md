@@ -10,6 +10,10 @@ All styling utilities are prefixed with:
 chai-
 ```
 
+Netlify: [LINK](https://chai-css-parser.netlify.app)
+
+Demo: [Youtube](https://youtu.be/a05pv1dbmv4?si=QqNpHKHDXWMdR43G)
+
 # 💡 Idea Behind ChaiCSS
 
 ChaiCSS is designed to make styling:
